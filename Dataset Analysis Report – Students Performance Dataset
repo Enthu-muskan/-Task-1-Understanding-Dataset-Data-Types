@@ -1,0 +1,27 @@
+Dataset Analysis Report – Students Performance Dataset
+Objective:
+The objective of this task is to understand the structure, data types, and machine learning readiness of the Students Performance dataset before applying any machine learning models.
+
+
+1. Dataset Overview
+The Students Performance dataset contains academic and demographic information of students. It is commonly used to analyze how various personal, social, and educational factors affect student academic performance. The dataset was loaded using the sklearn OpenML interface to ensure reproducibility and avoid manual file handling.
+2. Dataset Structure
+- The dataset consists of several hundred student records.
+- Each row represents a student.
+- Each column represents a feature such as demographic attributes or academic indicators.
+3. Data Types
+The dataset contains both numerical and categorical data.
+
+Numerical features include measurable values such as scores or numeric indicators.
+Categorical features include attributes such as gender, school-related information, and family background.
+4. Target Variable
+The target variable was identified dynamically using sklearn utilities. This approach avoids hardcoding column names and ensures correctness across datasets.
+5. Missing Values & Data Quality
+The dataset was checked for missing values using Pandas functions. No major missing values were observed, indicating good data quality.
+6. Categorical Data Distribution
+Categorical columns were analyzed using value counts to understand the distribution of different categories. This helps in identifying dominant categories and potential imbalance.
+7. Machine Learning Suitability
+The dataset size and structure make it suitable for basic machine learning models. However, categorical variables will require encoding before model training.
+8. Conclusion
+The Students Performance dataset is clean, well-structured, and appropriate for machine learning tasks. Proper preprocessing steps such as encoding categorical features are required before building predictive models.
+
